@@ -1,0 +1,45 @@
+
+Name: androidvideo
+Version: 0.2
+
+This script is based on androidvideo 0.1, a script developed by Harel Malk in May 2009 (http://www.harelmalka.com)
+
+(Modified by): Segundo Luis Martín Díaz Sotomayor
+(Nick): zchronos
+(Website): http://gioscix.com/bishoujolinux/
+(Email): smartinds@gmail.com
+
+IMPORTANT: You need compile ffmpeg with libfaac support
+
+I made this script for my Galaxy Mini GT-S5570L with Android 2.3.5 GingerBread but it works in all android devices
+For low-end smarthphones (for example the Galaxy Mini) I recommend the preset 1 (default: mpeg4)
+
+The other presets are in:
+http://developer.android.com/guide/appendix/media-formats.html
+
+Date: Dec. 12, 2011
+
+
+Presets:
+
+    1:  mpeg4 in SD (Works very well in all devices)
+    2:  h.264 in SD (Low Quality)
+    3:  h.264 in SD (High Quality)
+    4:  h.264 in HD (Not available on all devices)
+
+Options:
+
+    -preset      Preset. Default to 1
+    -aspect      Aspect. Default to 4:3
+    -s           Video Resolution (The Default depend from Profile)
+
+Examples:
+
+    Converting a video with defaults options:
+    ./androidconvert [FILE]
+
+    Converting a video with other options:
+    ./androidconvert -preset 1 -aspect 4:3 [FILE]
+
+    Converting many videos:
+    ./androidconvert [FILE] [FILE] [FILE]
